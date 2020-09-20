@@ -72,3 +72,42 @@ footer {
     padding:  0  0 0 215px;
     background: #2F303A;
 }
+
+.container {
+    width: 1170px;
+    margin: 94px auto;
+    text-align: center;
+}
+.container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.container ul {
+    margin-right: -30px;
+    margin-bottom: -30px;
+}
+.container ul li {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.filter {
+    
+}
+.filter li {
+    padding: 6px 22px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0,03em;
+    text-align: center;
+    color: #212121;
+}
+.portfolio {
+    margin-top: 50px;
+}
