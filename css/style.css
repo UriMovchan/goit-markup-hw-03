@@ -42,7 +42,7 @@ h2 {
     text-decoration: none;
 }
 
-.main_links {
+.main-links {
     position: absolute;
     top: 32px;
     left:453px;
@@ -50,47 +50,47 @@ h2 {
     
 
 }
-.main_links li {
+.main-links li {
     display: inline-block;
     margin-right: 50px;
     font: normal 500 14px/16px Roboto;
     letter-spacing: 0.02em;
 }
-.main_links li a{
+.main-links li a{
     color: #212121;
     font: normal 500 14px/16px Roboto;
     text-decoration: none;
 }
-.main_links li.active a{
+.main-links li.active a{
     color: #2196F3;
 }
 
-.main_mail_tel {
+.main-mail-tel {
     position: absolute;
     top: 32px;
     left: 1078px;
 }
-.main_mail_tel li {
+.main-mail-tel li {
     display: inline-block;
     margin-left: 50px;
     font: normal 500 14px/16px Roboto;
     letter-spacing: 0.02em;
 }
-.main_mail_tel li a {
+.main-mail-tel li a {
     color: #757575;
     font: normal 500 14px/16px Roboto;
     text-decoration: none;
 }
 
-.bussines_solution {
+.bussines-solution {
     width: 100%;
     height: 600px;
     color: #fff;
     background: #2F303A;
 }
-.bussines_solution h1 {
+.bussines-solution h1 {
     position: absolute;
-    top: 200px;
+    margin-top: 200px;
     left: 452px;
     width: 696px;
     height: 120px;
@@ -99,9 +99,9 @@ h2 {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.bussines_solution button {
+.bussines-solution button {
     position: absolute;
-    top: 350px;
+    margin-top: 350px;
     left: 700px;
     width: 200px;
     height: 50px;
@@ -138,27 +138,27 @@ h2 {
     color: #757575;
     font: normal normal 14px/24px Roboto;
 }
-.what_we_do {
+.what-we-do {
     position: relative;
     width: 1170px;
     height: 386px;
     margin: 94px 0 94px 215px;
     text-align: center;
 }
-.what_we_do h2 {
+.what-we-do h2 {
     height: 42px;
     margin-bottom: 50px;
 }
-.what_we_do li {
+.what-we-do li {
     display: inline-block;
     width: 370px;
     height: 294px;
     margin-right: 26px;
 }
-.what_we_do li:last-child {
+.what-we-do li:last-child {
     margin-right: 0;
 }
-.our_team {
+.our-team {
     position: relative;
     padding: 94px 215px;
     height: 648px;
@@ -166,10 +166,10 @@ h2 {
     text-align: center;
 }
 
-.our_team ul {
+.our-team ul {
     width: 1170px;
 }
-.our_team li {
+.our-team li {
     display: inline-block;
     width: 270px;
     height: 368px;
@@ -178,7 +178,7 @@ h2 {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.our_team li:last-child {
+.our-team li:last-child {
     margin-right: 0;
 }
 .our-team--info {
@@ -240,11 +240,16 @@ h2 {
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
 }
-.portfolio_name {
+.portfolio img {
+    display: block;
+    width: 370px;
+    height: 294px;
+}
+.portfolio-name {
     margin: 20px 24px;
     flex-direction: column;    
 }
-.portfolio_name li {
+.portfolio-name li {
     margin-bottom: 4px;  
     font-family: Roboto;
     font-style: normal;
@@ -254,7 +259,7 @@ h2 {
     letter-spacing: 0.06em;
     color: #212121;
 }
-.portfolio_name li:last-child {   
+.portfolio-name li:last-child {   
     font-weight: normal;
     font-size: 16px;
     line-height: 30px;
@@ -279,7 +284,7 @@ address li, address a {
     height: 21px;
 }
 
-.footer_mail_tel a{
+.footer-mail-tel a{
     
     opacity: 0.6;
     text-decoration: none;
