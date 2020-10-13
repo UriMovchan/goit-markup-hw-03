@@ -1,15 +1,25 @@
 @import 'https://urimovchan.github.io/helpful/css/reset.css';
+:root {
+    --document-background:#E5E5E5;
+    --white: #fff;
+    --active-link: #2196F3;
+    --text-dark:#212121;
+    --text-grey:#757575;
+    --background-dark:#2F303A;
+    --background-grey:#F5F4FA;
+    --border-grey:#eee;
+}
 
 html {
     width: 100%;
     height: 100%;
-    background: #E5E5E5;
+    background: var(--document-background);
 }
 body {
     position: relative;
     width: 1600px;
     margin: 0 auto;
-    background: #FFFFFF;
+    background:var(--white);
 }
 header {
     height: 80px;
@@ -20,7 +30,7 @@ nav {
 h2 {
     height: 42px;
     margin-bottom: 50px;
-    color: #212121;
+    color: var(--text-dark);
     font: normal bold 36px/42px Roboto;
     letter-spacing: 0.03em;    
 }
@@ -31,12 +41,12 @@ h2 {
     height: 31px;
     width: 145px;
     text-align: left;
-    color: #212121;
+    color: var(--text-dark);
     font: normal bold 26px/31px Raleway;
     text-decoration: none;
 }
 .logo span {
-    color: #2196F3;
+    color: var(--active-link);
 }
 .logo:hover {
     text-decoration: none;
@@ -56,13 +66,17 @@ h2 {
     font: normal 500 14px/16px Roboto;
     letter-spacing: 0.02em;
 }
+.main-links li a:hover,
+.main-links li a:focus{
+   color: var(--active-link);
+}
 .main-links li a{
-    color: #212121;
+    color: var(--text-dark);
     font: normal 500 14px/16px Roboto;
     text-decoration: none;
 }
 .main-links li.active a{
-    color: #2196F3;
+    color: var(--active-link);
 }
 
 .main-mail-tel {
@@ -77,16 +91,20 @@ h2 {
     letter-spacing: 0.02em;
 }
 .main-mail-tel li a {
-    color: #757575;
+    color: var(--text-grey);
     font: normal 500 14px/16px Roboto;
     text-decoration: none;
+}
+.main-mail-tel li a:hover,
+.main-mail-tel li a:focus {
+    color: var(--active-link);
 }
 
 .bussines-solution {
     width: 100%;
     height: 600px;
-    color: #fff;
-    background: #2F303A;
+    color: var(--white);
+    background: var(--background-dark);
 }
 .bussines-solution h1 {
     position: absolute;
@@ -105,13 +123,23 @@ h2 {
     left: 700px;
     width: 200px;
     height: 50px;
-    color: #fff;
+    color: var(--white);
     font: normal 900 16px/30px Roboto;
     letter-spacing: 0.06em;
     border-radius: 4px;
-    background: #2196F3;
+    background: var(--active-link);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    
+}
+.bussines-solution button:hover,
+.bussines-solution button:focus {
+    color: var(--active-link);
+    border: 1px solid currentColor;
+    background: var(--white);
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(33,150,243,1);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(33,150,243,1);
+    box-shadow: 0px 0px 5px 5px rgba(33,150,243,1);
+
 }
 .features {
     position: relative;
@@ -129,13 +157,13 @@ h2 {
 .features h2 {
     height: 16px;
     margin-bottom: 10px;
-    color: #212121;
+    color: var(--text-dark);
     font: normal bold 14px/16px Roboto;
     text-transform: uppercase;
 }
 .features p {
     height: 75px;
-    color: #757575;
+    color: var(--text-grey);
     font: normal normal 14px/24px Roboto;
 }
 .what-we-do {
@@ -162,7 +190,7 @@ h2 {
     position: relative;
     padding: 94px 215px;
     height: 648px;
-    background: #F5F4FA;
+    background: var(--background-grey);
     text-align: center;
 }
 
@@ -174,7 +202,7 @@ h2 {
     width: 270px;
     height: 368px;
     margin-right: 26px;
-    background: #fff;
+    background: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -192,7 +220,7 @@ h2 {
 }
 .our-team--info-profesion {
     display: block;
-    color: #757575;
+    color: var(--text-grey);
     font-weight: normal;
 }
 
@@ -204,25 +232,31 @@ h2 {
     display: flex;
     justify-content: center;
 }   
-.filter li {
+.filter button {
     margin-right: 8px;
     padding: 6px 22px;
-    background: #F5F4FA;
+    background: var(--background-grey);
     border-radius: 4px;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0,03em;
     text-align: center;
-    color: #212121;
-    
+    color: var(--text-dark); 
+    font:normal 500 16px/26px Roboto;
+    letter-spacing: 0,03em;
+    background: var(--background-grey);
 }
-.filter li.active {
-    color: #FFFFFF;
-    background: #2196F3;
+.filter button.active,
+.filter button.active:hover,
+.filter button.active:focus {
+    color: var(--white);
+    background: var(--active-link);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filter button:hover,
+.filter button:focus {
+    padding: 5px 21px;
+    color: var(--active-link);
+    border: 1px solid var(--active-link);
+    background: var(--white);
+    
 }
 .portfolio {
     display: flex;
@@ -236,8 +270,8 @@ h2 {
 .portfolio > li {
     width: 370px;
     height: 404px;
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    background: var(--white);
+    border: 1px solid var(--border-grey);
     box-sizing: border-box;
 }
 .portfolio img {
@@ -257,14 +291,14 @@ h2 {
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--text-dark);
 }
 .portfolio-name li:last-child {   
     font-weight: normal;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-grey);
 }
 footer {
     display: flex;
@@ -273,11 +307,11 @@ footer {
     align-items: flex-start;
     height: 252px;
     padding:  60px 0 60px 215px;
-    background: #2F303A;
+    background: var(--background-dark);
 }
 address li, address a {
     margin-bottom: 9px;
-    color: #fff;
+    color: var(--white);
     font: normal normal 14px/24px Roboto;
 }
 .address {
@@ -285,9 +319,13 @@ address li, address a {
 }
 
 .footer-mail-tel a{
-    
     opacity: 0.6;
     text-decoration: none;
+}
+.footer-mail-tel a:hover,
+.footer-mail-tel a:focus{
+    color: var(--active-link);
+    opacity: 1;
 }
 .footer.logo {
     position: relative;
@@ -295,4 +333,5 @@ address li, address a {
     left: 0;
     display: block;
     margin-bottom: 20px;
+    color: var(--white);
 }
